@@ -17,13 +17,13 @@ namespace Cake.Flutter
     public static class ArgumentsBuilderExtension
     {
         /// <summary>
-        /// Appends all arguments from <paramref name="settings"/> and <paramref name="arguments"/>.
+        /// Appends all arguments from <paramref name="settings"/> .
         /// </summary>
         /// <typeparam name="TSettings"></typeparam>
+        /// <param name="cakeEnvironment"></param>
         /// <param name="builder"></param>
         /// <param name="command"></param>
         /// <param name="settings">The settings.</param>
-        /// <param name="arguments"></param>
         public static void AppendAll<TSettings>(this ProcessArgumentBuilder builder, ICakeEnvironment cakeEnvironment, string command, TSettings settings)
             where TSettings : AutoToolSettings, new()
         {
@@ -47,6 +47,7 @@ namespace Cake.Flutter
         /// Appends pre or post command arguments.
         /// </summary>
         /// <typeparam name="TSettings"></typeparam>
+        /// <param name="cakeEnvironment"></param>
         /// <param name="builder"></param>
         /// <param name="settings"></param>
         /// <param name="preCommand"></param>
@@ -72,6 +73,7 @@ namespace Cake.Flutter
         /// Gets and processes <paramref name="property"/> value from <paramref name="settings"/>.
         /// </summary>
         /// <typeparam name="TSettings"></typeparam>
+        /// <param name="cakeEnvironment"></param>
         /// <param name="property"></param>
         /// <param name="settings">The settings.</param>
         /// <param name="preCommand">Pre or post command.</param>

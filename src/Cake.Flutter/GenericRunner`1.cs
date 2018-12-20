@@ -28,7 +28,7 @@ namespace Cake.Flutter
         }
 
         /// <summary>
-        /// Runs given <paramref name="command"/> using given <paramref name=" settings"/> and <paramref name="additional"/>.
+        /// Runs given <paramref name="command"/> using given <paramref name=" settings"/>.
         /// </summary>
         /// <param name="command">The command.</param>
         /// <param name="settings">The settings.</param>
@@ -45,11 +45,11 @@ namespace Cake.Flutter
             Run(settings, GetArguments(cakeEnvironment, command, settings));
         }
         /// <summary>
-        /// Runs given <paramref name="command"/> using given <paramref name=" settings"/> and <paramref name="additional"/> and returns the exit code and output.
+        /// Runs given <paramref name="command"/> using given <paramref name=" settings"/> and returns the exit code and output.
         /// </summary>
         /// <param name="command">The command.</param>
         /// <param name="settings">The settings.</param>
-        /// <returns>A <see cref="ValueTuple"/> containing ExitCode, Output and Errors.</returns>
+        /// <returns>A output lines.</returns>
         public IEnumerable<string> RunWithResult(string command, TSettings settings)
         {
             if (string.IsNullOrEmpty(command))

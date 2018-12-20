@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Cake.Flutter
 {
-    //// <summary>
+    /// <summary>
     /// Base class for all appcenter related tools.
     /// </summary>
     /// <typeparam name="TSettings">The settings type.</typeparam>
@@ -16,7 +16,7 @@ namespace Cake.Flutter
         private readonly IFileSystem _fileSystem;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AppCenterTool{TSettings}"/> class.
+        /// Initializes a new instance of the <see cref="FlutterTool{TSettings}"/> class.
         /// </summary>
         /// <param name="fileSystem">The file system.</param>
         /// <param name="environment">The environment.</param>
