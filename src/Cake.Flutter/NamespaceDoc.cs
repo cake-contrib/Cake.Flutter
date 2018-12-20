@@ -3,7 +3,7 @@
 namespace Cake.Flutter
 {
     /// <summary>
-    /// This namespace contains Dart operations.
+    /// This namespace contains Flutter operations.
     /// </summary>
     [CompilerGenerated]
     internal class NamespaceDoc
