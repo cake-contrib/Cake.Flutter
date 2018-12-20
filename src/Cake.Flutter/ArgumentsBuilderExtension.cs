@@ -1,5 +1,6 @@
 ﻿using Cake.Core;
 using Cake.Core.IO;
+using Cake.Core.Tooling;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,11 +55,14 @@ namespace Cake.Flutter
         {
             foreach (var property in typeof(TSettings).GetProperties(BindingFlags.Public | BindingFlags.Instance))
             {
-                foreach (string argument in GetArgumentFromProperty(cakeEnvironment, property, settings, preCommand: preCommand))
+                if (property.DeclaringType != typeof(ToolSettings))
                 {
-                    if (!string.IsNullOrEmpty(argument))
+                    foreach (string argument in GetArgumentFromProperty(cakeEnvironment, property, settings, preCommand: preCommand))
                     {
-                        builder.Append(argument);
+                        if (!string.IsNullOrEmpty(argument))
+                        {
+                            builder.Append(argument);
+                        }
                     }
                 }
             }
@@ -317,7 +321,7 @@ namespace Cake.Flutter
         /// <returns></returns>
         public static string GetArgumentFromStringProperty(PropertyInfo property, string value)
         {
-            return !string.IsNullOrEmpty(value) ? $"--{GetPropertyName(property.Name)} \"{value}\"" : null;
+            return !string.IsNullOrEmpty(value) ? $"--{GetPropertyName(property.Name)}=\"{value}\"" : null;
         }
         internal static string GetArgumentFromFilePathProperty(ICakeEnvironment cakeEnvironment, PropertyInfo property, FilePath value)
         {
