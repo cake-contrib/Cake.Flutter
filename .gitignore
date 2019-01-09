@@ -331,3 +331,4 @@ ASALocalRun/
 integration-test
 !tools/packages.config
 FlutterParser
+!/src/Cake.Flutter/Packages/*
