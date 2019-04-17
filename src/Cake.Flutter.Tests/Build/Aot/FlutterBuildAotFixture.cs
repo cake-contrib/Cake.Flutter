@@ -1,4 +1,5 @@
 ﻿using Cake.Core;
+using Cake.Core.Configuration;
 using Cake.Core.Diagnostics;
 using Cake.Core.IO;
 using Cake.Core.Tooling;
@@ -20,6 +21,9 @@ namespace Cake.Flutter.Tests.Build.Aot
         IProcessRunner ICakeContext.ProcessRunner => ProcessRunner;
         public IRegistry Registry => Registry;
         public ICakeDataResolver Data => throw new NotImplementedException();
+
+        ICakeConfiguration ICakeContext.Configuration => throw new NotImplementedException();
+
         public FlutterBuildAotFixture() : base("flutter")
         {
             Tools = Substitute.For<IToolLocator>();
