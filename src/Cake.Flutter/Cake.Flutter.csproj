@@ -11,7 +11,7 @@
   <PropertyGroup>
     <PackageId>Cake.Flutter</PackageId>
     <Title>Cake.Flutter</Title>
-    <Description>Dart addin for Cake Build.</Description>
+    <Description>Flutter addin for Cake Build.</Description>
     <PackageTags>Cake Flutter cake-addin</PackageTags>
     <Authors>Miha Markic</Authors>
     <Owners>Miha Markic, cake-contrib</Owners>
