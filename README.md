@@ -8,9 +8,11 @@ A Cake AddIn that extends Cake with [Flutter](https://flutter.io/) command tools
 
 ## Important
 
-0.1.1 Supports Cake 0.33+
+1.0.0 References Cake 1.0.0
 
-0.1.0 Supports Cake 0.28+, .NET Standard 2.0+ and .NET 4.6.1+.
+0.1.1 References Cake 0.33+
+
+0.1.0 References Cake 0.28+, .NET Standard 2.0+ and .NET 4.6.1+.
 
 ## Including addin
 Including addin in cake script is easy.
