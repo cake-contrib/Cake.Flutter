@@ -63,7 +63,7 @@ namespace Cake.Flutter
             var process = RunProcess(settings, GetArguments(cakeEnvironment, command, settings), new ProcessSettings { RedirectStandardError = false, RedirectStandardOutput = true });
             process.WaitForExit();
             ProcessExitCode(process.GetExitCode());
-            return process.GetStandardOutput(); ;
+            return process.GetStandardOutput();
         }
 
         private ProcessArgumentBuilder GetArguments(ICakeEnvironment cakeEnvironment, string command, TSettings settings)
