@@ -3,9 +3,9 @@ using NUnit.Framework;
 
 namespace Cake.Flutter.Tests.Build.Apk
 {
-    public class Flutter
+    partial class Flutter
     {
-        public class Build
+        partial class Build
         {
             [TestFixture]
             public class Apk

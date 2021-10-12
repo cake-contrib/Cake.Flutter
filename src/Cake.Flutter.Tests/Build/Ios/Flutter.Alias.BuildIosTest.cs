@@ -2,9 +2,9 @@ using NUnit.Framework;
 
 namespace Cake.Flutter.Tests.Build.Ios
 {
-    public class Flutter
+    partial class Flutter
     {
-        public class Build
+        partial class Build
         {
             [TestFixture]
             public class Ios
