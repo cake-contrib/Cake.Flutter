@@ -30,7 +30,7 @@ namespace Cake.Flutter
 		/// <summary>
 		/// --flavor                          Build a custom app flavor as defined by platform-specific build setup. Supports the use of product flavors in Android Gradle scripts. Supports the use of custom Xcode schemes.
 		/// </summary>
-		public bool? Flavor { get; set; }
+		public string Flavor { get; set; }
 		/// <summary>
 		/// --trace-startup                   Start tracing during startup.
 		/// </summary>
