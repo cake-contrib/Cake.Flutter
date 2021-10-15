@@ -21,7 +21,7 @@ namespace Cake.Flutter
 				throw new ArgumentNullException("context");
 			}
             var runner = new GenericRunner<FlutterBuildAppBundleSettings>(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
-			 runner.Run("build apk", settings ?? new FlutterBuildAppBundleSettings());
+			 runner.Run("build appbundle", settings ?? new FlutterBuildAppBundleSettings());
 		}
 
 
@@ -39,7 +39,7 @@ namespace Cake.Flutter
 				throw new ArgumentNullException("context");
 			}
             var runner = new GenericRunner<FlutterBuildAppBundleSettings>(context.FileSystem, context.Environment, context.ProcessRunner, context.Tools);
-			return runner.RunWithResult("build apk", settings ?? new FlutterBuildAppBundleSettings());
+			return runner.RunWithResult("build appbundle", settings ?? new FlutterBuildAppBundleSettings());
 		}
 
 	}
