@@ -4,9 +4,15 @@ A Cake AddIn that extends Cake with [Flutter](https://flutter.io/) command tools
 
 [![cakebuild.net](https://img.shields.io/badge/WWW-cakebuild.net-blue.svg)](http://cakebuild.net/)
 [![NuGet](https://img.shields.io/nuget/v/Cake.Flutter.svg)](https://www.nuget.org/packages/Cake.Flutter)
-[![Build status](https://ci.appveyor.com/api/projects/status/vi07dth3d1gek7ak?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-flutter)
+
+|Branch|Status|
+|------|------|
+|Master|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.Flutter?branch=master&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-flutter)|
+|Develop|[![Build status](https://ci.appveyor.com/api/projects/status/github/cake-contrib/Cake.Flutter?branch=develop&svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-flutter)|
 
 ## Important
+
+1.2.0 References Cake 4.0.0, targets .net 6+
 
 1.0.0 References Cake 1.0.0
 
