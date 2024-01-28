@@ -10,7 +10,6 @@ BuildParameters.SetParameters(
     repositoryOwner: "cake-contrib",
     repositoryName: "Cake.Flutter",
     appVeyorAccountName: "cakecontrib",
-	shouldRunDupFinder: false,
     shouldRunInspectCode: false,
 	shouldRunCodecov: false,
     shouldRunCoveralls: false); // Disabled because it's currently failing
