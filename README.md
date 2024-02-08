@@ -45,6 +45,14 @@ Other commands follow same convention.
 
 This version is built against Flutter version 2.1.0.
 
+## Discussion
+
+If you have questions, search for an existing one, or create a new discussion on the Cake GitHub repository, using the `extension-q-a` category.
+
+[![Join in the discussion on the Cake repository](https://img.shields.io/badge/GitHub-Discussions-green?logo=github)](https://github.com/cake-build/cake/discussions/categories/extension-q-a)
+
 ## Credits
 
-Brought to you by [Miha Markic](https://github.com/MihaMarkic) ([@MihaMarkic](https://twitter.com/MihaMarkic/)) and contributors.
+Brought to you by [Miha Markic](https://github.com/MihaMarkic) and contributors. 
+
+![Mastodon Follow](https://img.shields.io/mastodon/follow/001030236)
