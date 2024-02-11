@@ -13,6 +13,7 @@ BuildParameters.SetParameters(
     shouldPostToGitter: false,
     shouldRunInspectCode: false,
 	shouldRunCodecov: false,
+	shouldRunDotNetCorePack: true,
     shouldRunCoveralls: false); // Disabled because it's currently failing
 
 BuildParameters.PrintParameters(Context);
